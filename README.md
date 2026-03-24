@@ -8,14 +8,6 @@ https://github.com/Jongchan/attention-module
 - Paper: Woo S, Park J, Lee J Y, et al. CBAM: Convolutional Block Attention Module[J]. 2018. ECCV2018
 https://openaccess.thecvf.com/content_ECCV_2018/html/Sanghyun_Woo_Convolutional_Block_Attention_ECCV_2018_paper.html
 
-## 项目简介
-
-- `train.py`: 训练入口
-- `test.py`: 测试与结果导出
-- `config.py`: 统一配置文件
-- `dataset.py`: 数据集读取与 DataLoader 构建
-- `getmodel.py`: 模型选择入口
-- `flop.py`: 使用 `torchstat` 做简单的模型复杂度统计
 
 ## 环境依赖
 
