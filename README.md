@@ -49,8 +49,6 @@ datasets/
     `-- labels/
 ```
 
-数据要求：
-
 - 图像和标签分别放在 `images/`、`labels/` 目录下。
 - 训练、验证、测试三个子集都需要分别准备。
 - 图像文件名与标签文件名最好一一对应，且数量一致。
@@ -70,13 +68,13 @@ datasets/
 
 ## 输出结果
 
-训练和测试输出默认保存在：
+训练和测试输出默认路径：
 
 ```text
 ./savel_model/{modelname}_{dataname}_{loss_}_{optimizer_}_ne{ne}_bs{bs}
 ```
 
-输出文件包括：
+输出文件：
 
 - `best_model.pt`: 验证集损失最优的模型权重
 - `loss.txt`: 每个 epoch 的验证损失记录
