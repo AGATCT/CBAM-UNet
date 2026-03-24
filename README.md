@@ -27,12 +27,6 @@ https://openaccess.thecvf.com/content_ECCV_2018/html/Sanghyun_Woo_Convolutional_
 - `opencv-python`
 - `torchstat` (`flop.py` 使用，可选)
 
-可按自己的 CUDA / PyTorch 版本先安装好 `torch`、`torchvision`，其余依赖执行：
-
-```bash
-pip install numpy matplotlib pillow opencv-python torchstat
-```
-
 ## 数据集组织
 当前代码默认从 `config.py` 中的 `data_dir` 读取数据，并约定目录结构为：
 
@@ -49,13 +43,8 @@ datasets/
     `-- labels/
 ```
 
-- 图像和标签分别放在 `images/`、`labels/` 目录下。
-- 训练、验证、测试三个子集都需要分别准备。
-- 图像文件名与标签文件名最好一一对应，且数量一致。
-- `dataset.py` 中是分别读取 `images` 和 `labels` 目录文件列表后按索引配对。
 
-
-## 运行方式
+## 运行配置
 配置文件 `config.py` ：
 
 - 数据集根目录 `data_dir`
@@ -65,8 +54,6 @@ datasets/
 - 模型名称 `modelname`
 - 类别数 `nc`
 
-
-## 输出结果
 
 训练和测试输出默认路径：
 
